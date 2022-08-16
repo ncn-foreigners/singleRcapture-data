@@ -1,0 +1,35 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(data.table)
+```
+
+```{r}
+load("/Users/berenz/Library/Containers/com.apple.mail/Data/Library/Mail Downloads/DC73FEAD-9DB0-40DD-BBD0-66C792F1E4BD/data2009.Rdata")
+d2009 <- setDT(d2009)
+d2009[, region:="Other"]
+d2009[Amsterdam == 1, region:="Amsterdam"]
+d2009[Rotterdam == 1, region:="Rotterdam"]
+d2009[Haaglanden == 1, region:="Haaglanden"]
+d2009[Utrecht == 1, region:="Utrecht"]
+
+d2009[, origin:="Unknown"]
+d2009[Turks == 1, origin:="Turkey"]
+d2009[NAfrika == 1, origin:="North-Africa"]
+d2009[Afrika == 1, origin:="Africa"]
+d2009[Suriname == 1, origin:="Suriname"]
+d2009[OostEuropa == 1, origin:="Eastern-Europe"]
+d2009[Azie == 1, origin:="Asia"]
+d2009[Amerika == 1, origin:="America"]
+
+setnames(d2009,
+         c("Y", "t_i", "t_i_star", "male", "plus40"),
+         c("captures", "time_risk", "time_risk2", "sex", "age"))
+
+saveRDS(object = d2009[, .(captures, time_risk, time_risk2, sex, age, region, origin)],
+        file = "data/netherlands2009.rds")
+```
+
