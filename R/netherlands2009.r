@@ -15,7 +15,7 @@
 #' \item{origin} {Nationality, 8 levels (Africa, America, Asia, Eastern-Europe, North-Africa, Suriname, Turkey, Unknown)}
 #' }
 #'
-#' @source Cruyff, M. J., Husken, T. F., & Van Der Heijden, P. G. (2018). Extending the truncated Poisson regression model to a time-at-risk model. In Capture-Recapture Methods for the Social and Medical Sciences (pp. 155-162). Chapman and Hall/CRC.
+#' @source Cruyff, M. J., Husken, T. F., & van Der Heijden, P. G. (2018). Extending the truncated Poisson regression model to a time-at-risk model. In Capture-Recapture Methods for the Social and Medical Sciences (pp. 155-162). Chapman and Hall/CRC.
 #' @docType data
 #' @keywords datasets
 "netherlands2009"
