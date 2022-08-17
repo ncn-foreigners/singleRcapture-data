@@ -10,7 +10,7 @@ Authors@R:
              comment = c(ORCID = "0000-0002-8281-4301")),
       person(given = "Piotr",
              family = "Chlebicki",
-             role = c("ctr"),
+             role = c("ctb"),
              email = "piochl@st.amu.edu.pl"))
 Description: Diverse datasets for single-source capture-recapture models based on generalized linear models with truncated distributons (e.g. zero truncated Poisson).
 License: CC0
