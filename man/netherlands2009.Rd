@@ -17,7 +17,7 @@ This data frame contains the following columns:
 }
 }
 \source{
-Cruyff, M. J., Husken, T. F., & Van Der Heijden, P. G. (2018). Extending the truncated Poisson regression model to a time-at-risk model. In Capture-Recapture Methods for the Social and Medical Sciences (pp. 155-162). Chapman and Hall/CRC.
+Cruyff, M. J., Husken, T. F., & van Der Heijden, P. G. (2018). Extending the truncated Poisson regression model to a time-at-risk model. In Capture-Recapture Methods for the Social and Medical Sciences (pp. 155-162). Chapman and Hall/CRC.
 }
 \usage{
 netherlands2009
